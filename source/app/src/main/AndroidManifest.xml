@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".Activities.Splash">
+        <activity
+            android:name=".Activities.Splash"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,12 +25,15 @@
         </activity>
         <activity
             android:name=".Activities.Step0"
+            android:screenOrientation="portrait"
             android:parentActivityName=".Activities.Splash" />
         <activity
             android:name=".Activities.Step1"
+            android:screenOrientation="portrait"
             android:parentActivityName=".Activities.Splash" />
         <activity
             android:name=".Activities.Step2"
+            android:screenOrientation="portrait"
             android:parentActivityName=".Activities.Splash" />
 
     </application>
