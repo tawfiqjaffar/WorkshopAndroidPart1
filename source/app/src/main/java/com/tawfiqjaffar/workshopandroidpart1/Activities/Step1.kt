@@ -17,6 +17,7 @@ class Step1 : AppCompatActivity() {
     private var selectedOperator: String =
         "+" // this is the string that corresponds to the selected operator (+, -, *, /, %) you don't need to change it's value, that's already done for you when you choose an operator in the dropdown menu
     private val result: TextView by lazy { findViewById<TextView>(R.id.result) } // this is the text view that should contain the result
+    private val submit : Button by lazy { findViewById<Button>(R.id.submit) } // this is the submit button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,12 +41,10 @@ class Step1 : AppCompatActivity() {
 
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, position: Int, p3: Long) {
                 selectedOperator = items[position]
-                Toast.makeText(context, selectedOperator, Toast.LENGTH_LONG).show()
             }
         }
     }
 
     private fun codeMePlease() { // fill in this method and add call as many methods as you want from here
-        // TODO (not implemented)
     }
 }

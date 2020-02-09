@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.tawfiqjaffar.workshopandroidpart1.Activities.Step4.Step4
 import com.tawfiqjaffar.workshopandroidpart1.R
 
 class Splash : AppCompatActivity() {
@@ -13,6 +14,7 @@ class Splash : AppCompatActivity() {
     private val buttonStep1: Button by lazy { findViewById<Button>(R.id.step1) }
     private val buttonStep2: Button by lazy { findViewById<Button>(R.id.step2) }
     private val buttonStep3: Button by lazy { findViewById<Button>(R.id.step3) }
+    private val buttonStep4: Button by lazy { findViewById<Button>(R.id.step4) }
 
     private val context: Context by lazy { this }
 
@@ -35,6 +37,9 @@ class Splash : AppCompatActivity() {
         }
         buttonStep3.setOnClickListener {
             startActivity(Intent(context, Step3::class.java))
+        }
+        buttonStep4.setOnClickListener {
+            startActivity(Intent(context, Step4::class.java))
         }
     }
 }
