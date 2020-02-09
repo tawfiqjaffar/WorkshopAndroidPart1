@@ -12,6 +12,7 @@ class Splash : AppCompatActivity() {
     private val buttonStep0: Button by lazy { findViewById<Button>(R.id.step0) }
     private val buttonStep1: Button by lazy { findViewById<Button>(R.id.step1) }
     private val buttonStep2: Button by lazy { findViewById<Button>(R.id.step2) }
+    private val buttonStep3: Button by lazy { findViewById<Button>(R.id.step3) }
 
     private val context: Context by lazy { this }
 
@@ -31,6 +32,9 @@ class Splash : AppCompatActivity() {
         }
         buttonStep2.setOnClickListener {
             startActivity(Intent(context, Step2::class.java))
+        }
+        buttonStep3.setOnClickListener {
+            startActivity(Intent(context, Step3::class.java))
         }
     }
 }
