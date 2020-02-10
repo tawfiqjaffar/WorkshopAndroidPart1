@@ -3,15 +3,10 @@ package com.tawfiqjaffar.workshopandroidpart1.Activities.Step4
 import android.content.Context
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.Gson
 import com.tawfiqjaffar.workshopandroidpart1.R
-import com.tawfiqjaffar.workshopandroidpart1.Utils.Api
 import com.tawfiqjaffar.workshopandroidpart1.Utils.Article
-import com.tawfiqjaffar.workshopandroidpart1.Utils.Headlines
 
 class Step4 : AppCompatActivity() {
 
@@ -26,6 +21,7 @@ class Step4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_step4)
+        title = "Step 4"
 
         codeMePlease()
     }

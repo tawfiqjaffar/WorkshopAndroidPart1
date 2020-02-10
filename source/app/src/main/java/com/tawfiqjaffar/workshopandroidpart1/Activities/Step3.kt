@@ -1,22 +1,11 @@
 package com.tawfiqjaffar.workshopandroidpart1.Activities
 
 import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.Toast
-import com.google.gson.Gson
+import androidx.appcompat.app.AppCompatActivity
 import com.tawfiqjaffar.workshopandroidpart1.R
-import com.tawfiqjaffar.workshopandroidpart1.Utils.Api
-import com.tawfiqjaffar.workshopandroidpart1.Utils.DisplayImage
-import com.tawfiqjaffar.workshopandroidpart1.Utils.Headlines
-import java.net.HttpURLConnection
-import java.net.URL
 
 class Step3 : AppCompatActivity() {
 
@@ -33,6 +22,7 @@ class Step3 : AppCompatActivity() {
     }
 
     private fun setupViews() {
+        title = "Step 3"
         codeMePlease()
     }
 
